@@ -6,10 +6,10 @@ on:
       RECOVERY_URL:
         description: 'RECOVERY URL'
         required: true
-        default: 'https://transfer.sh/(RECOMMENDED)'
+        default: 'https://jmp.sh/g4XtEVX0)'
 
 env:
-  RECOVERY_URL: https://oshi.at/Rpjg
+  RECOVERY_URL: https://jmp.sh/g4XtEVX0
 
 jobs:
   build:
@@ -48,7 +48,7 @@ jobs:
         mv fastbootd-recovery.tar fastbootd-recovery.tar.md5
 
     - name: Upload Recovery
-      uses: actions/upload-artifact@v3.0.0
+      uses: actions/upload-artifact
       with:
         path: /home/runner/work/Patch-Recovery/Patch-Recovery/output/*.md5
         name: Patched-Recovery
